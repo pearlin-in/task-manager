@@ -19,7 +19,6 @@
     background-color: #ff3366;
 }
 
-/* Back to Home Button */
 .back-button {
     display: inline-block;
     margin-bottom: 10px;
@@ -133,15 +132,15 @@ button.checkmark:hover {
     color: #ff0044;
 }
 
-/* Classes for task urgency */
+
 .overdue {
-    background: #ff9191; /* Red for overdue tasks */
+    background: #ff9191;
 }
 
 .due-soon {
-    background: #ffdc95; /* Yellow for tasks due soon */
+    background: #ffdc95; 
 }
 
 .upcoming {
-    background: #c5f5c5; /* Green for upcoming tasks */
+    background: #c5f5c5;
 }

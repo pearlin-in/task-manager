@@ -10,13 +10,10 @@ function addTask() {
         return;
     }
 
-    // Calculate days left manually like Java code
     const today = new Date();
     const dueDate = new Date(taskDate);
     
     const daysLeft = calculateDaysLeft(today, dueDate);
-
-    // Determine task class based on how soon the task is due
     let taskClass = '';
     if (daysLeft < 0) {
         taskClass = 'overdue'; 
@@ -44,37 +41,24 @@ function addTask() {
     dateInput.value = "";
     sortTasks();
 }
-
-// Manually calculate days left between two dates (similar to Java logic)
 function calculateDaysLeft(today, dueDate) {
-    // Get the number of days from January 1st to today's date
     const todayDays = getDayOfYear(today);
-
-    // Get the number of days from January 1st to the due date
     const dueDays = getDayOfYear(dueDate);
-
-    // Return the difference in days
     return dueDays - todayDays;
 }
-
-// Function to calculate the day of the year for a given date
 function getDayOfYear(date) {
     const daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     let dayOfYear = 0;
-    
-    // Calculate day of the year by summing up the days of previous months
     for (let i = 0; i < date.getMonth(); i++) {
         dayOfYear += daysInMonths[i];
     }
     
-    // Add the days of the current month
     dayOfYear += date.getDate();
-
     return dayOfYear;
 }
 function markAsCompleted(button) {
     const taskItem = button.parentElement;
     taskItem.style.textDecoration = "line-through";
     taskItem.style.color = "#666";
-    button.disabled = true; // Disable the checkmark after marking
+    button.disabled = true; 
 }
