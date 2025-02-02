@@ -1,0 +1,147 @@
+.home-container {
+    background: white;
+    padding: 30px;
+    max-width: 400px;
+    margin: auto}
+
+.start-button {
+    display: inline-block;
+    background-color: #ff6699;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.start-button:hover {
+    background-color: #ff3366;
+}
+
+/* Back to Home Button */
+.back-button {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ff6699;
+}
+
+.back-button:hover {
+    color: #ff3366;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffe6f2;
+    text-align: center;
+    margin: 50px;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6699;
+    font-size: 2rem;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border: solid #ff99cc;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ff3366;
+}
+
+select {
+    padding: 8px;
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+select:hover {
+    background-color: #ff6699;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ffccdd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+button.checkmark {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 1%;
+    left: 1px;
+    cursor: pointer;
+}
+
+button.checkmark:hover {
+    color: #4CAF50;
+}
+
+.delete {
+    background: none;
+    color: #fafafa;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: #ff0044;
+}
+
+/* Classes for task urgency */
+.overdue {
+    background: #ff9191; /* Red for overdue tasks */
+}
+
+.due-soon {
+    background: #ffdc95; /* Yellow for tasks due soon */
+}
+
+.upcoming {
+    background: #c5f5c5; /* Green for upcoming tasks */
+}
